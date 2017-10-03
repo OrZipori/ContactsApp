@@ -1,0 +1,220 @@
+.clear:before,
+.clear:after {
+    content: "";
+    display: table;
+}
+.clear:after {
+    clear: both;
+}
+.clear {
+    zoom: 1;
+}
+
+p, th, td, li, dd, dt, ul, ol, blockquote, q, acronym, abbr, a, input, select, textarea {
+margin: 0;
+padding: 0;
+}
+
+#contactsApp {
+  height: 100%;
+  width: 100%;
+}
+
+#appHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+#tableContainer {
+  background: #bdc3c7;
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin-top: 110px;
+}
+
+.header {
+  background: #2c3e50;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  border-bottom: 10px solid #34495e;
+}
+
+.appTitle {
+  font-size: 2.5em;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+.iconButton {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.addIcon {
+  position: absolute;
+  right: 3.5em;
+  top: 7px;
+}
+
+.search {
+  padding: 4px;
+  margin-left: 3.5em;
+  font-size: 24px;
+  width: 85%;
+  margin-top: 1px;
+  border-radius: 4px;
+  border: 0;
+}
+
+.searchBar {
+  background-color: #34495e;
+  height: 50px;
+}
+
+.contactsTable {
+  list-style: none;
+}
+
+li.tableHeader {
+  background: #646f7b;
+  height: 25px;
+  text-indent: 1em;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.profilePicture {
+  width: 20%;
+}
+
+.profilePicture img {
+  margin: 0 auto;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+  top: 10px;
+}
+
+.information {
+  width: 71%;
+}
+
+.information span {
+  display: block;
+  text-indent: 2em;
+}
+
+.contactName {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.buttons {
+  width: 5%;
+}
+
+.tableItem {
+  border-bottom: rgba(0, 0, 0, 0.15) solid 1px;
+  height: 70px;
+}
+
+.tableItem div {
+  display: inline-block;
+}
+
+.separator {
+  border-left: 1px solid #38546d;
+  border-right: 1px solid #16222c;
+  height: 50px;
+  position: relative;
+  top: 10px;
+  right: 30px;
+  opacity: 0.2;
+}
+
+.removeIcon {
+  margin-left: 1em;
+}
+
+.searchFault {
+  text-align: center;
+}
+
+.addUserPopUp {
+  position: fixed;
+  z-index: 10000;
+  width: 25%;
+  top: 10em;
+  box-shadow: 0px 3px 13px #000;
+  background: #2c3e50;
+}
+
+.popUpHeader {
+  display: block;
+  background: #34495e;
+  color: white;
+  font-size: 1.5em;
+  text-indent: 0.5em;
+}
+
+.inputPopUp {
+  width: 91%;
+  display: block;
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 1.2em;
+  margin-left: 3px;
+}
+
+input[type="submit"], input[type="reset"] {
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 3px;
+  height: 41px;
+  color: #fff;
+  border-radius: 4px;
+  border: 0;
+  background: #50c8ef;
+  cursor: pointer;
+  font-size: 1.2em;
+  width: 48.5%;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="submit"]:active, input[type="reset"]:active  {
+  background: #2184a4;
+}
+
+.popUpExit {
+  float: right;
+  margin: 2px;
+}
+
+.error {
+  background: #ff4949;
+  color: white;
+  padding: 3px;
+  list-style: none;
+  width: 95%;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 15em;
+}
